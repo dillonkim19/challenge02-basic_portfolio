@@ -1,0 +1,48 @@
+:root {
+    --dark-gray: rgba(49,52,61);
+    --teal: rgba(149, 202, 204);
+
+}
+
+body {
+    font-family: 'Lucida Sans', 'Century Gothic', 'Lucida Sans', 'Arial', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex; 
+    flex-direction: row;
+    background-color: var(--dark-gray);
+    padding: 14px 5% 14px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    background-color: var(--teal);
+    color: var(--dark-gray);
+    font-size: 40px; 
+    padding: 5px 4px 5px 10%; 
+}
+
+nav ul {
+    display: flex;
+    text-decoration: none;
+    color: var(--teal);
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px 5px 10px;
+    color: var(--teal);
+    font-size: 22px;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active{
+    
+    text-decoration:none;
+    color: inherit;
+  }
