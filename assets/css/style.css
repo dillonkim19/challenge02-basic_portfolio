@@ -1,7 +1,7 @@
 :root {
     --dark-gray: rgba(49,52,61);
     --teal: rgba(149, 202, 204);
-
+    --subtitle: rgba(62, 90, 115);
 }
 
 body {
@@ -41,8 +41,55 @@ nav ul li {
     font-size: 22px;
 }
 
+main {
+    margin: 20px 10% 10px 10%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+h2 {
+    color: var(--subtitle);
+    font-size: 40px;
+    text-align: right;
+    border-right: 5px solid var(--subtitle);
+    padding-right: 15px;
+    flex: 0 0 25%;
+}
+
+section p,
+section ul, 
+section div {
+    flex: 0 0 70%;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first-app,
+.other-apps {
+    margin: 5px;
+}
+
+.first-app {
+    background-color: blue;
+    flex-basis: 100%
+}
+
+.other-apps {
+    background-color: red;
+    flex-basis: calc(50% - 10px);
+}
+
 a, a:link, a:visited, a:focus, a:hover, a:active{
     
     text-decoration:none;
     color: inherit;
-  }
+}
