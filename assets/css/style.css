@@ -1,7 +1,7 @@
 :root {
     --dark-gray: rgba(49,52,61);
     --teal: rgba(149, 202, 204);
-    --subtitle: rgba(62, 90, 115);
+    --subtitle: rgba(113, 140, 163);
 }
 
 body {
@@ -41,6 +41,40 @@ nav ul li {
     font-size: 22px;
 }
 
+#first-link::before {
+    content: "";
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: -20px;
+    top: -8px;
+    background: url(../images/avatar.webp);
+    background-size: 40px 40px;
+}
+
+.hero-banner {
+    background: var(--subtitle);
+    background-image: url(../images/black-and-white.jpeg);
+    background-blend-mode: color-burn;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+#subtitle {
+    flex: 0 0 80%;
+    width: 100%;
+    padding: 2%;
+    text-align: right;
+}
+
+#subtitle h2 {
+    background: var(--teal);
+    display: inline;
+}
+
+
 main {
     margin: 20px 10% 10px 10%;
 }
@@ -75,6 +109,12 @@ section p,
     flex-wrap: wrap;
 }
 
+#work-projects div {
+    flex: display;
+    background: var(--teal);
+    color: black;
+}
+
 #work-projects a {
     border: 5px solid var(--teal);
 }
@@ -85,8 +125,11 @@ section p,
 }
 
 .first-app {
-    background-color: blue;
-    flex-basis: 100%
+    background-image: url(../images/surf.jpeg);
+    background-size: 100%;
+    background-repeat: repeat no-repeat;
+    flex-basis: 100%;
+    min-height: 35vh;
 }
 
 .other-apps {
