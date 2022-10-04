@@ -187,3 +187,51 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     color: inherit;
 }
 
+@media screen and (max-width: 980px) {
+    header {
+        flex-direction: column;
+        
+        padding: 0 0 5px 0;
+    }
+    section {
+        flex-direction: column;
+    }
+
+    h1 {
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    main h2 {
+        border-right: 0;
+        border-bottom: 3px solid var(--subtitle);
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    nav ul {
+        margin: 20px 0 0 0;
+    }
+
+    .hero-banner {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    address {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #subtitle {
+        text-align: center;
+    }
+
+    .other-apps {
+        flex-basis: calc(100%);
+        min-height: 300px;
+    }
+}
