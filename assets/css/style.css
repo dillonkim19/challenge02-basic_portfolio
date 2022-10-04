@@ -11,6 +11,7 @@ body {
     flex-direction: column;
 }
 
+/* header and nav */
 header {
     display: flex; 
     flex-direction: row;
@@ -41,6 +42,7 @@ nav ul li {
     font-size: 22px;
 }
 
+/* insert avatar before nav links */
 #first-link::before {
     content: "";
     position: relative;
@@ -52,6 +54,7 @@ nav ul li {
     background-size: 40px 40px;
 }
 
+/* hero banner section - image */
 .hero-banner {
     background: var(--subtitle);
     background-image: url(../images/black-and-white.jpeg);
@@ -72,8 +75,13 @@ nav ul li {
 #subtitle h2 {
     background: var(--teal);
     display: inline;
+    color: var(--subtitle);
+    font-size: 40px;
+    text-align: right;
+    flex: 0 0 20%;
 }
 
+/* Start of main content */
 
 main {
     margin: 20px 10% 10px 10%;
@@ -97,12 +105,7 @@ main h2 {
     flex: 0 0 20%;
 }
 
-.hero-banner h2 {
-    color: var(--subtitle);
-    font-size: 40px;
-    text-align: right;
-    flex: 0 0 20%;
-}
+/* overall format of main section */
 
 section p,
 #work-projects,
@@ -110,6 +113,7 @@ section p,
     flex: 0 0 75%;
 }
 
+/* work projects section */
 #work-projects {
     display: flex;
     flex-direction: row;
@@ -126,11 +130,13 @@ section p,
     border: 5px solid var(--teal);
 }
 
+/* applications formatting */
 .first-app,
 .other-apps {
     margin: 5px;
 }
 
+/* first app is bigger in size */
 .first-app {
     background-image: url(../images/surf.jpeg);
     background-size: 100%;
@@ -139,10 +145,12 @@ section p,
     min-height: 35vh;
 }
 
+/* other apps are smaller in size */
 .other-apps {
     flex-basis: calc(50% - 10px);
 }
 
+/* background images of apps 2-5 */
 .LED {
     background-image: url(../images/led.jpeg);
     background-size: 100%;
@@ -171,7 +179,7 @@ section p,
     min-height: 20vh;
 }
 
-
+/* address element with contacts */
 address {
     display: flex;
     align-items: center;
@@ -181,12 +189,16 @@ address {
     height: 100%
 }
 
+/* remove default properties of links */
 a, a:link, a:visited, a:focus, a:hover, a:active{
     
     text-decoration:none;
     color: inherit;
 }
 
+/* media queries */
+
+/* max width 980px */
 @media screen and (max-width: 980px) {
     header {
         flex-direction: column;
@@ -219,6 +231,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     }
 }
 
+/* max width 768px */
 @media screen and (max-width: 768px) {
     
     address {
