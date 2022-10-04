@@ -88,12 +88,19 @@ section {
     padding: 8px 0;
 }
 
-h2 {
+main h2 {
     color: var(--subtitle);
     font-size: 40px;
     text-align: right;
     border-right: 5px solid var(--subtitle);
     padding-right: 15px;
+    flex: 0 0 20%;
+}
+
+.hero-banner h2 {
+    color: var(--subtitle);
+    font-size: 40px;
+    text-align: right;
     flex: 0 0 20%;
 }
 
@@ -133,9 +140,37 @@ section p,
 }
 
 .other-apps {
-    background-color: red;
     flex-basis: calc(50% - 10px);
 }
+
+.LED {
+    background-image: url(../images/led.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+}
+
+.calculator {
+    background-image: url(../images/calculator.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+}
+
+.puzzle {
+    background-image: url(../images/puzzle.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+}
+
+.buddy {
+    background-image: url(../images/running.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+}
+
 
 address {
     display: flex;
@@ -146,10 +181,9 @@ address {
     height: 100%
 }
 
-
-
 a, a:link, a:visited, a:focus, a:hover, a:active{
     
     text-decoration:none;
     color: inherit;
 }
+
